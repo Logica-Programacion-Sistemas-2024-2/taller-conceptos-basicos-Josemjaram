@@ -5,14 +5,16 @@ package sistemas;
 
 public class App {
     
+    
     // Diseñe un algoritmo para saludar al usuario: Hola usuario. El nombre del usuario es ingresado por teclado
     public static String saludarUsuario(String nombre) {
         try {
             // Lógica interna
+            return "Hola " + nombre;
         } catch (Exception e) {
             return "Error: " + e.getMessage();
         }
-        return "";
+        
     }
 
     // Diseñe un algoritmo que lea por teclado una velocidad en Km/seg y la convierta a metros/seg y a metros/hora
