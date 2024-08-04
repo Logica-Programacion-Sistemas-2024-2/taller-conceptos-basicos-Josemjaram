@@ -9,7 +9,7 @@ public class App {
     public static String saludarUsuario(String nombre) {
         try {
             // Lógica interna
-            return "Hola" + nombre;
+            return "Hola " + nombre;
 
         } catch (Exception e) {
             return "Error: " + e.getMessage();
