@@ -9,7 +9,7 @@ public class App {
     public static String saludarUsuario(String nombre) {
         try {
             // Lógica interna
-            return "Hola " + nombre;
+            return "Hola" + nombre;
 
         } catch (Exception e) {
             return "Error: " + e.getMessage();
@@ -312,20 +312,19 @@ public class App {
             return (int)notaFinal;
 
         } catch (Exception e) {
-
           return -1;
         }
-        return 0;
     }
 
     // Elaborar un algoritmo que dados los 5 porcentajes de una materia y las 4 primeras notas calcule cuánto tiene que sacar para ganar si el puntaje mínimo es 3.
     public static int calcularNotaNecesaria(double porcentaje1, double porcentaje2, double porcentaje3, double porcentaje4, double porcentaje5, double nota1, double nota2, double nota3, double nota4) {
-        //Control de errores
-        if (porcentaje1 == 0 || porcentaje2 == 0 || porcentaje3 == 0 || porcentaje4 == 0){
-            return -1;
-        }
         try {
             // Lógica interna
+
+            //Control de errores
+            if (porcentaje1 == 0 || porcentaje2 == 0 || porcentaje3 == 0 || porcentaje4 == 0){
+                return -1;
+            }
             
             //  Inicializacion
             double primeraNotaFinal = 0;
@@ -351,7 +350,6 @@ public class App {
         }catch (Exception e) {
             return -1;
         }
-        return 0;
     
     }
 
@@ -389,7 +387,6 @@ public class App {
         } catch (Exception e) {
             return -1;
         }
-        return 0;
     }
 
     // Diseñe un algoritmo que calcule el área de un triángulo rectángulo.
@@ -409,7 +406,7 @@ public class App {
         } catch (Exception e) {
             return -1;
         }
-        return 0;
+
     }
 
     // Diseñe un algoritmo que calcule el perímetro de un cuadrado.
@@ -423,13 +420,12 @@ public class App {
             //Proceso
             perimetro = lado*4;
 
-            //Resutado
+             //Resutado
             return (int)perimetro;
 
         } catch (Exception e) {
             return -1;
         }
-        return 0;
     }
 
     // Diseñe un algoritmo que calcule el volumen de un cilindro.
@@ -451,7 +447,7 @@ public class App {
         } catch (Exception e) {
             return -1;
         }
-        return 0;
+        
     }
 
     // Diseñe un algoritmo que calcule el área del círculo. El radio se pide por teclado.
@@ -459,21 +455,17 @@ public class App {
         try {
             // Lógica interna
 
-            //Inicializacion y declaracion
+            //Inicializacion 
             double area = 0;
             double pi = Math.PI;
             double radioAla2 = radio * radio;
 
-            //Proceso
             area = pi * radioAla2;
 
-            //Resultado
             return (int)area;
-
         } catch (Exception e) {
             return -1;
         }
-        return 0;
     }
 
     public static void main(String[] args) {
